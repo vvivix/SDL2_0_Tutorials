@@ -1,8 +1,8 @@
 SET(TARGET_APP 21_sound_effects_and_music)
 
-SET(SRC
-        21_sound_effects_and_music.cpp)
+SET(SRC        21_sound_effects_and_music.cpp)
 
 add_executable(${TARGET_APP} ${SRC})
-target_link_libraries(${TARGET_APP} SDL2main SDL2 ${SDL2_image_lib} ${SDL2_ttf_lib} ${SDL2_mixer_lib})
+
+target_link_libraries(${TARGET_APP} ${SDL2_LIBRARIES})
 

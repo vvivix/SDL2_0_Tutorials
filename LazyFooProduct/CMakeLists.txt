@@ -3,6 +3,13 @@ if (MINGW)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lmingw32 -mwindows ")
 endif()
 
+SET(SDL2_LIBRARIES
+        ${SDL2MAIN_LIBRARY}
+        ${SDL2_LIBRARY}
+        ${SDL2_IMAGE_LIBRARY}
+        ${SDL2_TTF_LIBRARY}
+        ${SDL2_MIXER_LIBRARY})
+
 add_subdirectory(01_hello_SDL)
 add_subdirectory(02_getting_an_image_on_the_screen)
 add_subdirectory(03_event_driven_programming)

@@ -1,8 +1,8 @@
 SET(TARGET_APP 11_clip_rendering_and_sprite_sheets)
 
-SET(SRC
-        11_clip_rendering_and_sprite_sheets.cpp)
+SET(SRC 11_clip_rendering_and_sprite_sheets.cpp)
 
 add_executable(${TARGET_APP} ${SRC})
-target_link_libraries(${TARGET_APP} SDL2main SDL2 ${SDL2_image_lib})
+
+target_link_libraries(${TARGET_APP} ${SDL2_LIBRARIES})
 

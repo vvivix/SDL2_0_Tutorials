@@ -1,8 +1,7 @@
 SET(TARGET_APP 15_rotation_and_flipping)
 
-SET(SRC
-        15_rotation_and_flipping.cpp)
+SET(SRC 15_rotation_and_flipping.cpp)
 
 add_executable(${TARGET_APP} ${SRC})
-target_link_libraries(${TARGET_APP} SDL2main SDL2 ${SDL2_image_lib})
 
+target_link_libraries(${TARGET_APP} ${SDL2_LIBRARIES})
